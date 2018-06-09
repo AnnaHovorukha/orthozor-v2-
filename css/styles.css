@@ -40,6 +40,11 @@ background-color: #f1f1f1;
   float: right;
 }
 
+.content-right {
+  float: right;
+  margin: auto 5px;
+}
+
 #decoBtn{
   background-color: none;
   border: 1px solid #ff0000;
@@ -54,7 +59,22 @@ background-color: #f1f1f1;
   margin: 15px 35px 0 0;
 }
 
-#decoBtn:hover{
+#goBtn{
+  background-color: none;
+  border: 1px solid #ff0000;
+  white-space: nowrap;
+  height: 40px;
+  color: #0000c6;
+  padding: 0px 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 50px;
+  line-height: 40px;
+}
+
+#decoBtn:hover, #goBtn:hover{
   background-color: #f1f1f1;
   color: #ff0000;
   border: 1px solid #0000c6;
@@ -62,12 +82,24 @@ background-color: #f1f1f1;
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
-  .header a {
+  .header a{
     float: none;
     display: block;
     text-align: left;
   }
-  .header-right {
+  .header-right{
     float: none;
   }
+}
+
+.homeTxt{
+  margin: 0 35% 0 5%;
+}
+
+.content{
+  display: flex;
+  background-color: #ffffff;
+  margin: 6% auto;
+  width: 60%;
+  padding: 3%;
 }
