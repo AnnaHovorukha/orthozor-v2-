@@ -13,19 +13,25 @@ padding: 0px;
 border: 0px;
 font-family: 'Roboto';
 background-color: #f1f1f1;
+width: 100%;
+overflow: hidden;
 }
 
-#title{
-  font-family: 'HammersmithOne Regular';
+#title a{
+  font-family: 'HammersmithOne-Regular',Sans-Serif;
   font-size: 50px;
   color: #ff0000;
   margin: 0 5%;
+  display: inline-block;
 }
 
 .header {
   overflow: hidden;
   background-color: #ffffff;
   padding: 30px 10px;
+  position: fixed;
+  z-index: 9999;
+  width:100%;
 }
 
 .header a {
@@ -105,14 +111,95 @@ background-color: #f1f1f1;
 .content{
   display: flex;
   background-color: #ffffff;
-  margin: 6% auto 0 auto;
+  margin: 15% auto 0 auto;
   width: 60%;
   padding: 3%;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.paysage-accueil{
+  /*width: 100%;
+  min-height: 500px;*/
+  height:100%;
+  overflow: hidden;
+  z-index: 1;
+  position: absolute;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.sea-bg{
+  background: linear-gradient(-5deg, #334e9d, #FFFFFF, #334e9d, #FFFFFF);
+  background-size: auto auto;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index:0;
+}
+
+.paysage-test{
+  height: 100%;
+  width: auto;
+  z-index: 1;
+  position: absolute;
+}
+
+.main-test{
+  width:50%;
+  height:100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  z-index:100;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .dashboard{
   display: flex;
   background-color: #ffffff;
+<<<<<<< HEAD
   margin: 2% auto 0 auto;
   width: 60%;
   padding: 2% 3%;
@@ -123,6 +210,16 @@ background-color: #f1f1f1;
   margin: 0 auto;
   width: 60%;
   padding: 2.5% 3%;
+=======
+  margin: 4% auto;
+  width: 60%;
+  padding: 5% 3%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  top: 300px;
+>>>>>>> 8309ffbe19ce063757623fea51a06b785af0bc4e
 }
 
 .dashGroup{
