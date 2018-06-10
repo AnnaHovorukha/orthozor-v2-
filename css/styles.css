@@ -32,6 +32,9 @@ overflow: hidden;
   position: fixed;
   z-index: 9999;
   width:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header a {
@@ -111,13 +114,14 @@ overflow: hidden;
 .content{
   display: flex;
   background-color: #ffffff;
-  margin: 15% auto 0 auto;
+  margin: 0 auto;
   width: 60%;
   padding: 3%;
   z-index: 2;
   position: absolute;
   left: 0;
   right: 0;
+  top: 25%;
 }
 
 .paysage-accueil{
@@ -126,7 +130,7 @@ overflow: hidden;
   height:100%;
   overflow: hidden;
   z-index: 1;
-  position: absolute;
+  position: relative;
 }
 
 @-webkit-keyframes Gradient {
@@ -198,11 +202,15 @@ overflow: hidden;
 
 .dashboard{
   display: flex;
+  position: absolute;
   background-color: #ffffff;
-<<<<<<< HEAD
   margin: 2% auto 0 auto;
   width: 60%;
   padding: 2% 3%;
+  left: 0;
+  right: 0;
+  top: 45%;
+  z-index: 999;
 }
 .dashboardBottom{
   display: flex;
@@ -210,7 +218,6 @@ overflow: hidden;
   margin: 0 auto;
   width: 60%;
   padding: 2.5% 3%;
-=======
   margin: 4% auto;
   width: 60%;
   padding: 5% 3%;
@@ -218,8 +225,7 @@ overflow: hidden;
   left: 0;
   right: 0;
   z-index: 4;
-  top: 300px;
->>>>>>> 8309ffbe19ce063757623fea51a06b785af0bc4e
+  top: 380px;
 }
 
 .dashGroup{
@@ -243,8 +249,12 @@ overflow: hidden;
 }
 
 .circleDiv{
-  position: relative;
+  position: absolute;
   margin: auto;
+  left: 0;
+  right: 0;
+  top: 65%;
+  z-index: 999;
 }
 
 #outer-circle {
