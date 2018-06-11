@@ -185,7 +185,7 @@ overflow: hidden;
 .paysage-test{
   height: 100%;
   width: auto;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
 }
 
@@ -198,6 +198,9 @@ overflow: hidden;
   position: absolute;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dashboard{
@@ -307,4 +310,47 @@ overflow: hidden;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.dyno1{
+  z-index:1;
+}
+
+#_x30_4_9_{
+  z-index:3;
+}
+
+.form-test{
+  position: absolute;
+	width: 90%;
+	height: auto;
+}
+
+.form-test input{
+  width:20px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #f01;
+}
+.form-test ol li{
+  margin-bottom: 4%;
+}
+
+.terre{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+  right: 0;
+}
+
+.terre img{
+  right:0;
+  width: 100%;
+  transform: translateY(-8%);
+}
+
+.up{
+  z-index: 15;
+  position: absolute;
 }
