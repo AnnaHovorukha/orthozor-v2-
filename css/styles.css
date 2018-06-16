@@ -220,6 +220,8 @@ overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #0000c6;
+  font-size: 0.8em;
 }
 
 .dashboard{
@@ -471,7 +473,7 @@ overflow: hidden;
 
 .valider{
   position: absolute;
-  left: 50%;
+  left: 67%;
   transform: translateX(-50%);
   bottom: 5%;
   z-index: 999;
@@ -508,6 +510,103 @@ overflow: hidden;
   display: none;
 }
 
+<<<<<<< HEAD
 .form-test input:focus ol li::before{
   background-color: black;
+=======
+.custom-counter{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.custom-counter2{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: step-counter2 10;
+}
+.custom-counter3{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: step-counter3 20;
+}
+.custom-counter4{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: step-counter4 30;
+}
+.custom-counter5{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: step-counter5 40;
+}
+
+.custom-counter li{
+  counter-increment: step-counter;
+}
+.custom-counter2 li {
+  counter-increment: step-counter2;
+}
+.custom-counter3 li {
+  counter-increment: step-counter3;
+}
+.custom-counter4 li {
+  counter-increment: step-counter4;
+}
+.custom-counter5 li {
+  counter-increment: step-counter5;
+}
+
+.custom-counter li::before {
+  content: counter(step-counter);
+  margin-right: 15px;
+  margin-top: 50px;
+  font-size: 80%;
+  background-color: #ff0000;
+  color: white;
+  font-weight: bold;
+  padding: 5px 8px;
+  border-radius: 50px;
+}
+
+.custom-counter2 li::before {
+  content: counter(step-counter2);
+}
+.custom-counter3 li::before {
+  content: counter(step-counter3);
+}
+.custom-counter4 li::before {
+  content: counter(step-counter4);
+}
+.custom-counter5 li::before {
+  content: counter(step-counter5);
+}
+
+.custom-counter2 li::before, .custom-counter3 li::before, .custom-counter4 li::before, .custom-counter5 li::before{
+  margin-right: 15px;
+  margin-top: 50px;
+  font-size: 80%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff0000;
+  background-color: none;
+  color: #ff0000;;
+  font-weight: bold;
+  padding: 5px 5px;
+  border-radius: 50px;
+}
+
+.subtext{
+  margin-left: 6.5%;
+  font-size: 0.8em;
+  color: #ff0000;
+}
+.subtext2{
+  margin-left: 6.9%;
+  font-size: 0.8em;
+  color: #ff0000;
+>>>>>>> 003426ab0669a1afb8ced8666c4697e42fd94c72
 }
