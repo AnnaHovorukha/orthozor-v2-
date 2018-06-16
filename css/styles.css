@@ -89,7 +89,7 @@ overflow: hidden;
   line-height: 40px;
 }
 
-#decoBtn:hover, #goBtn:hover{
+#decoBtn:hover, #goBtn:hover, #validerBtn:hover{
   background-color: #f1f1f1;
   color: #ff0000;
   border: 1px solid #0000c6;
@@ -376,4 +376,116 @@ overflow: hidden;
 .up{
   z-index: 15;
   position: absolute;
+}
+
+#timer{
+  color: #fff;
+	position: absolute;
+  z-index: 999;
+  top: 10%;
+  left: 10%;
+	text-align: center;
+  font-size: 48px;
+  display: block;
+}
+
+.timerDiv{
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  right: 0;
+  top: 5%;
+  z-index: 999;
+}
+
+#outer-timer {
+  background: #ff0000;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 65%;
+  left: 0;
+  right: 0;
+}
+
+.inner-timer {
+  display: inline-block;
+  width: 118px;
+  height: 118px;
+  border-radius: 50%;
+  background-image: linear-gradient(-90deg, white 50%, transparent 50%, transparent), linear-gradient(144deg, #ff8080 50%, white 50%, white);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: -59px 0px 0px -59px;
+}
+.inner-timer:before {
+  content: "";
+  font-size: 18px;
+  position: absolute;
+  text-align: center;
+  line-height: 5em;
+  background: #ff0000;
+  color: #000;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.inner-timer:after {
+  color: #ffffff;
+  font-family: 'HammersmithOne-Regular',Sans-Serif;
+  font-size: 18px;
+  content: "40:00";
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.valider{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  z-index: 999;
+}
+
+#validerBtn{
+  background-color: none;
+  border: 1px solid #ff0000;
+  white-space: nowrap;
+  height: 40px;
+  color: #0000c6;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 50px;
+  line-height: 40px;
+}
+
+#form1{
+  display: block;
+}
+#form2{
+  display: none;
+}
+#form3{
+  display: none;
+}
+#form4{
+  display: none;
+}
+#form5{
+  display: none;
 }
