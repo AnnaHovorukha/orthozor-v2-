@@ -182,6 +182,25 @@ overflow: hidden;
   z-index:0;
 }
 
+.sea-noise{
+  background-image: url("../png/img-noise.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index:1;
+  -webkit-animation: Gradient 250s ease infinite;
+  -moz-animation: Gradient 250s ease infinite;
+  animation: Gradient 250s ease infinite;
+}
+
+.bg-noise{
+  background-image: url("../png/img-noise.png");
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+}
+
 .paysage-test{
   height: 100%;
   width: auto;
@@ -313,7 +332,11 @@ overflow: hidden;
 }
 
 .dyno1{
-  z-index:1;
+  z-index: 101;
+  position: absolute;
+  width:23%;
+  left:6%;
+  top:46%;
 }
 
 #_x30_4_9_{
