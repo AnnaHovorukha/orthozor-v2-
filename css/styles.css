@@ -359,6 +359,24 @@ overflow: hidden;
   margin-bottom: 4%;
 }
 
+.form-test ol {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: num; /* Задаём имя счетчика */
+   }
+
+.form-test ol li::before {
+    content: counter(num);
+    counter-increment: num;
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 0.4% 1.2%;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
 .terre{
   width: 100%;
   height: 100%;
@@ -488,4 +506,8 @@ overflow: hidden;
 }
 #form5{
   display: none;
+}
+
+.form-test input:focus ol li::before{
+  background-color: black;
 }

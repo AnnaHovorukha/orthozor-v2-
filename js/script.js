@@ -17,56 +17,35 @@ var tr16 = document.getElementsByClassName("tr16");
 var tr17 = document.getElementsByClassName("tr17");
 var grass = document.getElementsByClassName("grass");
 var dyno1 = document.getElementsByClassName("dyno1");
-
+var gills = document.getElementsByClassName("gillsMove");
 
 var tltreeSwing = new TimelineMax();
 var tltreeSwing2 = new TimelineMax();
 var dynoBreath = new TimelineMax();
-var dynoMove = new TimelineMax();
+var tlDynoMove = new TimelineMax();
+var dynoWatchTexte = new TimelineMax();
 
 tltreeSwing.staggerFromTo([tr1,tr2,tr3,tr4,tr5,tr6,tr7,tr8,tr9,tr10,tr11,tr12,tr13,tr14,tr15,tr16,tr17], 1.5, {
   transformOrigin: "50% 100%",
   skewX:1
 }, {
-  skewX:-1.5,
+  skewX:2.5,
   repeat:-1,
   /*repeatDelay:10*/
   yoyo:true,
   ease:"linear",
 }, 30)
 
-tltreeSwing2.staggerFromTo([tree5,tree6], 2, {
-  transformOrigin: "10% 100%",
-  skewX:-5,
-  skewY:0
-}, {
-  skewX:-2,
-  repeat:-1,
-  yoyo:true,
-  ease:"linear"
-}, 5)
-
-//dyno
-var dynoWatchTexte = new TimelineMax();
-dynoWatchTexte.fromTo(dyno1, 3, {
-  opacity: 0,
-  scale: 1
-}, {
-  scale: 1,
-  opacity:1,
-  repeat:-1,
+var tlgreenFace = new TimelineMax({
+  repeat:1,
   yoyo:true
-}, .5);
-/*
-dynoBreath.staggerFrom(".dyno1", .4, {
-  opacity:0
-}, .1);
+});
+tlgreenFace.set(dyno1, {opacity:0})
+tlgreenFace.to(dyno1, 1, {opacity:1}, 180)
+tlgreenFace.to(gills, .5, {skewY:"5deg", repeat:10, yoyo:true})
 
-dynoMove.staggerTo(".dyno1", 0.2, {
-  delay:5,
-  opacity:1
-}, .5)
-*/
+
+
 var tlgrass = new TimelineMax();
 tlgrass.staggerFromTo(grass, 2, {
   transformOrigin:"0% 100%",
