@@ -33,7 +33,7 @@ tltreeSwing.staggerFromTo([tr1,tr2,tr3,tr4,tr5,tr6,tr7,tr8,tr9,tr10,tr11,tr12,tr
   /*repeatDelay:10*/
   yoyo:true,
   ease:"linear",
-}, .5)
+}, 30)
 
 tltreeSwing2.staggerFromTo([tree5,tree6], 2, {
   transformOrigin: "10% 100%",
