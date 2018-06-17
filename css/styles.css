@@ -24,6 +24,11 @@ overflow: hidden;
   margin: 0 5%;
   display: inline-block;
 }
+@media screen and (max-width: 1150px) {
+  #title a{
+    margin: 0 2%;
+  }
+}
 
 .header {
   overflow: hidden;
@@ -276,13 +281,13 @@ overflow: hidden;
   width: 300px;
 }
 .dashNumber{
-  font-family: 'HammersmithOne Regular';
+  font-weight: 500;
   color: #ff0000;
   font-size: 3em;
   margin: auto 2%;
 }
 .dashTxt{
-  margin: auto 0;
+  margin: auto 5%;
   color: #0000c6;
 }
 
@@ -526,6 +531,14 @@ overflow: hidden;
   display: none;
 }
 
+<<<<<<< HEAD
+=======
+
+.form-test input:focus ol li::before{
+  background-color: black;
+}
+
+>>>>>>> db462b6f62a55911447edd75c0a6dff75d67cc41
 .custom-counter{
   margin: 0;
   padding: 0;
@@ -605,7 +618,6 @@ overflow: hidden;
   border-width: 1px;
   border-color: #ff0000;
   background-color: none;
-  color: #ff0000;;
   font-weight: bold;
   padding: 5px 5px;
   border-radius: 50px;
@@ -620,4 +632,193 @@ overflow: hidden;
   margin-left: 6.9%;
   font-size: 0.8em;
   color: #ff0000;
+<<<<<<< HEAD
+=======
+}
+
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 2px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.footer {
+  font-family: 'HammersmithOne-Regular',Sans-Serif;
+  overflow: hidden;
+  background-color: #ff0000;
+  padding: 5px 30px;
+  z-index: 9999;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+}
+
+.corrections{
+  float: right;
+  white-space: nowrap;
+  margin-right: 8%;
+}
+.corrections span{
+  margin-right: 15%;
+}
+.corrections a{
+  margin-right: 5%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#nature{
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  z-index: 9999;
+  width: 50%;
+}
+
+#monBilan{
+  font-family: 'HammersmithOne-Regular',Sans-Serif;
+  font-size: 20px;
+  color: #ff0000;
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  top: 135px;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 999;
+  border-top: 1px solid #ff0000;
+}
+.icons{
+  margin-left: 6%;
+}
+
+.icons img{
+  margin-left: 3%;
+}
+
+#competences{
+  overflow: hidden;
+  background-color: #ffffff;
+  z-index: 999;
+  width:100%;
+  height: 75%;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  color: #ff0000;
+}
+
+.titles{
+  font-family: 'HammersmithOne-Regular',Sans-Serif;
+  font-size: 20px;
+  margin: 5% 11%;
+}
+.subtitles{
+  font-size: 12px;
+  margin: -2% 11% 0;
+}
+
+#jauges{
+  position: absolute;
+  left: 0;
+  width: 53%;
+  height: 100%;
+  font-size: 12px;
+}
+#distribution{
+  position: absolute;
+  right: 0;
+  width: 47%;
+  height: 100%;
+}
+
+.minus{
+  position: relative;
+  max-width: 9px;
+  left: 11%;
+  float: left;
+}
+.minus img:first-child{
+  margin-bottom: 183px;
+}
+
+.level-wrapper {
+    border-radius: 20px;
+    border: 1px solid #ff0000;
+    clear: both;
+    width: 30%;
+    height: 10px;
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+}
+.level-animate {
+    -webkit-animation-name: grow-to-right;
+    animation-name: grow-to-right;
+}
+
+.level-bar {
+    background-color: #ff0000;
+    height: 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#categories{
+  width: 90%;
+  position: absolute;
+  float: right;
+  margin: -1.7% 14% 0;
+}
+
+#categories span{
+  margin-left: -1.7%;
+}
+
+#category1, #category2, #category3, #category4, #category5, #category6{
+  border-bottom: 1px solid #ff0000;
+  padding: 9px;
+}
+#category7{
+  padding: 9px;
+}
+
+.numberCircle {
+  width: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background: #ff0000;
+  color: #ffffff;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.numberCircle2 {
+  width: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.ratings{
+  position: relative;
+  max-width: 20px;
+  left: 3%;
+  float: right;
+  bottom: 1%;
+}
+.ratings div{
+  margin-bottom: 13px;
+>>>>>>> db462b6f62a55911447edd75c0a6dff75d67cc41
 }

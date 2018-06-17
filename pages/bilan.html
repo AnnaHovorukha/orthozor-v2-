@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/styles.css" type="text/css" >
-	<link rel="stylesheet" href="css/fonts.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/fonts.css" type="text/css" charset="utf-8" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 	<title>Orthozor</title>
 </head>
@@ -13,6 +13,7 @@
 
 	<div class="paysage-accueil">
 		<?xml version="1.0" encoding="utf-8"?>
+		<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 		<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 viewBox="0 0 1278 837" style="enable-background:new 0 0 1278 837;" xml:space="preserve">
 		<style type="text/css">
@@ -129,44 +130,116 @@
 
 	<!-- Header -->
 	<div class="header">
-		<div id="title"><a href="index.html">Orthozor</a></div>
+		<div id="title"><a href="../index.html">Orthozor</a></div>
 		<div class="header-right">
-	    <a href="pages/test.html">Nouveau Test</a>
+      <a href="test.html">Nouveau Test</a>
 	    <a href="#compte">Mon Compte</a>
 			<a href="#trophees">Trophées</a>
 	    <a href="#deconnexion" id="decoBtn">Déconnexion</a>
 	  </div>
 	</div>
 
-	<!-- Interface Pt. 1 -->
-	<div class="content">
-		<span class="homeTxt">Bonjour John Doe, prêt pour un nouveau test ?</span>
-		<div class="content-right">
-			<a href="pages/test.html" id="goBtn">C'est parti !</a>
-		</div>
-	</div>
+  <div id="monBilan">
+    <p class="icons">
+      <span>MON BILAN</span>
+      <a href="#"><img src="../png/print.png" alt="" id="print"></a>
+      <a href="#"><img src="../png/download.png" alt="" id="télécharger"></a>
+    </p>
+  </div>
 
-	<!-- Interface Pt. 2 -->
-	<div class="dashboard">
-		<div class="dashGroup">
-			<span class="dashNumber">3</span>
-			<span class="dashTxt">Tests<br>effectués</span>
-		</div>
-		<div class="dashGroup">
-			<span class="dashNumber">2</span>
-			<span class="dashTxt">Tests<br>disponibles</span>
-		</div>
-		<div class="dashGroup">
-			<span class="dashNumber">1</span>
-			<span class="dashTxt">Trophée<br>débloqué</span>
-		</div>
-	</div>
-	<div class="circleDiv">
-		<div id="outer-circle">
-			<div class="inner-circle"></div>
-		</div>
-	</div>
-	<div class="dashboardBottom"></div>
+  <div id="competences">
+    <div id="jauges">
+      <p class="titles">Compétences</p>
+      <div class="minus">
+        <img src="../png/plus.png" alt="plus">
+        <img src="../png/moins.png" alt="moins">
+      </div>
+      <div class="ratings">
+        <div class="numberCircle">100</div>
+        <div class="numberCircle">90</div>
+        <div class="numberCircle">84</div>
+        <div class="numberCircle2">50</div>
+        <div class="numberCircle2">50</div>
+        <div class="numberCircle2">20</div>
+        <div class="numberCircle2">20</div>
+      </div>
+      <div id="categories">
+        <div id="category1">
+          <span>Distinguer à et a</span>
+          <div class="level-wrapper">
+            <div class="level-default level-animate">
+              <div class="level-bar" style="width:100%"></div>
+            </div>
+          </div>
+        </div>
+        <div id="category2">
+          <span>Accorder le sujet et le participe passé - verbes pronominaux</span>
+          <div class="level-wrapper">
+            <div class="level-default level-animate">
+              <div class="level-bar" style="width:90%"></div>
+            </div>
+          </div>
+        </div>
+        <div id="category3">
+          <span>Accorder le sujet et le participe passé - auxiliaire être</span>
+          <div class="level-wrapper">
+            <div class="level-default level-animate">
+              <div class="level-bar" style="width:84%"></div>
+            </div>
+          </div>
+        </div>
+        <div id="category4">
+          <span>Accorder le nom et l’adjectif - adjectifs numéraux</span>
+          <div class="level-wrapper">
+            <div class="level-default level-animate">
+              <div class="level-bar" style="width:50%"></div>
+            </div>
+          </div>
+        </div>
+        <div id="category5">
+          <span>Choisir la bonne forme (homophone) - tous/tout</span>
+          <div class="level-wrapper">
+            <div class="level-default level-animate">
+              <div class="level-bar" style="width:50%"></div>
+            </div>
+          </div>
+        </div>
+        <div id="category6">
+          <span>Accorder le sujet et le participe passé - auxiliaire être</span>
+          <div class="level-wrapper">
+            <div class="level-default level-animate">
+              <div class="level-bar" style="width:20%"></div>
+            </div>
+          </div>
+        </div>
+        <div id="category7">
+          <span>Choisir la bonne forme (homophone) - ce/se</span>
+          <div class="level-wrapper">
+            <div class="level-default level-animate">
+              <div class="level-bar" style="width:20%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="distribution">
+      <p class="titles">Distribution des compétences</p>
+      <p class="subtitles">Les cinq catégories d’erreur ci-dessous représentent
+        80% des erreurs d’orthographe gramaticallement observées.</p>
+      <img style="margin:3% 13% 0; width:70%" src="../png/bilan.png" alt="">
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="corrections">
+      <a href="#">
+        <span>Voir mes corrections</span>
+         <i class="down"></i>
+      </a>
+    </p>
+  </div>
+  <img src="../png/nature.png" alt="" id="nature">
+
 
 
 	<script src="js/script.js"></script>
