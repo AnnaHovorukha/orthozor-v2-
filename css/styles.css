@@ -769,3 +769,35 @@ i {
 #category7{
   padding: 9px;
 }
+
+.numberCircle {
+  width: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background: #ff0000;
+  color: #ffffff;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+.numberCircle2 {
+  width: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.ratings{
+  position: relative;
+  max-width: 20px;
+  left: 3%;
+  float: right;
+  bottom: 1%;
+}
+.ratings div{
+  margin-bottom: 13px;
+}
