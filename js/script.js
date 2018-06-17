@@ -18,6 +18,8 @@ var tr17 = document.getElementsByClassName("tr17");
 var grass = document.getElementsByClassName("grass");
 var dyno1 = document.getElementsByClassName("dyno1");
 var gills = document.getElementsByClassName("gillsMove");
+var dyno3 = document.getElementsByClassName("dyno3");
+var dyno4 = document.getElementsByClassName("dyno4");
 
 var tltreeSwing = new TimelineMax();
 var tltreeSwing2 = new TimelineMax();
@@ -25,26 +27,54 @@ var dynoBreath = new TimelineMax();
 var tlDynoMove = new TimelineMax();
 var dynoWatchTexte = new TimelineMax();
 
-tltreeSwing.staggerFromTo([tr1,tr2,tr3,tr4,tr5,tr6,tr7,tr8,tr9,tr10,tr11,tr12,tr13,tr14,tr15,tr16,tr17], 1.5, {
-  transformOrigin: "50% 100%",
-  skewX:1
-}, {
-  skewX:2.5,
-  repeat:-1,
-  /*repeatDelay:10*/
-  yoyo:true,
-  ease:"linear",
-}, 30)
 
-var tlgreenFace = new TimelineMax({
-  repeat:1,
-  yoyo:true
-});
-tlgreenFace.set(dyno1, {opacity:0})
-tlgreenFace.to(dyno1, 1, {opacity:1}, 180)
-tlgreenFace.to(gills, .5, {skewY:"5deg", repeat:10, yoyo:true})
+function movingPlants(){
+  tltreeSwing.staggerFromTo([tr1,tr2,tr3,tr4,tr5,tr6,tr7,tr8,tr9,tr10,tr11,tr12,tr13,tr14,tr15,tr16,tr17], 1.5, {
+    transformOrigin: "50% 100%",
+    skewX:1
+  }, {
+    skewX:2.5,
+    repeat:-1,
+    yoyo:true,
+    ease:"linear",
+  }, 30)
+}
 
 
+function moveDyno1(){
+  var tlgreenFace = new TimelineMax();
+  tlgreenFace.set(dyno1,{opacity:0},0)
+  tlgreenFace.to(dyno1, .5, {opacity:1}, 60)
+  tlgreenFace.to(gills, .5, {skewY:"5deg", repeat:15, yoyo:true})
+  tlgreenFace.to(dyno1, 1, {opacity:0})
+}
+
+setTimeout(function() {
+  moveDyno1();
+}, 0);
+
+function moveDyno3(){
+  var tldyno3 = new TimelineMax();
+  tldyno3.set(dyno3,{opacity:0}, 0)
+  tldyno3.to(dyno3, .5, {opacity:1}, 180)
+  tldyno3.to(dyno3, .5, {scale:1.010, repeat:15, yoyo:true})
+  tldyno3.to(dyno3, .5, {opacity:0})
+}
+
+setTimeout(function() {
+  moveDyno3();
+}, 0);
+
+function moveDyno4(){
+  var tldyno4 = new TimelineMax();
+  tldyno4.set(dyno4,{opacity:0},0)
+  tldyno4.to(dyno4, .5, {opacity:1}, 360)
+
+}
+
+setTimeout(function() {
+  moveDyno4();
+}, 0);
 
 var tlgrass = new TimelineMax();
 tlgrass.staggerFromTo(grass, 2, {
@@ -55,3 +85,5 @@ tlgrass.staggerFromTo(grass, 2, {
   repeat: -1,
   yoyo: true
 }, 0.3);
+
+window.onload = movingPlants;
