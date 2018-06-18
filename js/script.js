@@ -87,3 +87,13 @@ tlgrass.staggerFromTo(grass, 2, {
 }, 0.3);
 
 window.onload = movingPlants;
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
