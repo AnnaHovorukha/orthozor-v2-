@@ -284,6 +284,29 @@ html, body {
   margin: auto 10%;
   width: 300px;
 }
+.line1::after {
+    content:"";
+    position: absolute;
+    width: 10%;
+    bottom: 40%;
+    left: 30%;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid #ff0000;
+    z-index: -1;
+}
+.line2::after {
+    content:"";
+    position: absolute;
+    width: 10%;
+    bottom: 40%;
+    left: 61%;
+    right: 0;
+    height: 0.5em;
+    border-top: 1px solid #ff0000;
+    z-index: -1;
+}
+
 .dashNumber{
   font-weight: 500;
   color: #ff0000;
@@ -855,4 +878,8 @@ text.cls-23{
 #distribution svg{
   width: 70%;
   margin-left: 15%;
+}
+
+.blur{
+  
 }
