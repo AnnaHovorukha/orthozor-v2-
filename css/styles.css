@@ -389,6 +389,14 @@ html, body {
   left:5%;
 }
 
+.plants-bilan{
+  z-index: 9999;
+  width: 50%;
+  position: absolute;
+  bottom: -1%;
+  left: 0;
+}
+
 #_x30_4_9_{
   z-index:3;
 }
@@ -540,18 +548,9 @@ html, body {
   display: none;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 94e5b2547d2ed9308be2a4d6dc7a7829ac62dff2
 .form-test input:focus ol li::before{
   background-color: black;
 }
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 94e5b2547d2ed9308be2a4d6dc7a7829ac62dff2
 .custom-counter{
   margin: 0;
   padding: 0;
