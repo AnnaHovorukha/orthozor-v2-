@@ -20,12 +20,18 @@ var dyno1 = document.getElementsByClassName("dyno1");
 var gills = document.getElementsByClassName("gillsMove");
 var dyno3 = document.getElementsByClassName("dyno3");
 var dyno4 = document.getElementsByClassName("dyno4");
+var pl1 = document.getElementsByClassName("pl1");
+var pl2 = document.getElementsByClassName("pl2");
+var pl3 = document.getElementsByClassName("pl3");
+var pl4 = document.getElementsByClassName("pl4");
+var pl5 = document.getElementsByClassName("pl5");
 
 var tltreeSwing = new TimelineMax();
 var tltreeSwing2 = new TimelineMax();
 var dynoBreath = new TimelineMax();
 var tlDynoMove = new TimelineMax();
 var dynoWatchTexte = new TimelineMax();
+var plantsBilan = new TimelineMax();
 
 
 function movingPlants(){
@@ -40,6 +46,17 @@ function movingPlants(){
   }, 30)
 }
 
+function animationBilan(){
+  plantsBilan.staggerFromTo([pl1, pl2, pl3, pl4, pl5], 1.5, {
+    transformOrigin: "50% 100%",
+    skewX:1
+  }, {
+    skewX:2.5,
+    repeat:-1,
+    yoyo:true,
+    ease:"linear",
+  }, 3)
+}
 
 function moveDyno1(){
   var tlgreenFace = new TimelineMax();
@@ -51,6 +68,7 @@ function moveDyno1(){
 
 setTimeout(function() {
   moveDyno1();
+  animationBilan();
 }, 0);
 
 function moveDyno3(){
