@@ -92,12 +92,17 @@ overflow: hidden;
   font-size: 14px;
   border-radius: 50px;
   line-height: 40px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
 #decoBtn:hover, #goBtn:hover, #validerBtn:hover{
-  background-color: #f1f1f1;
+  /*background-color: #f1f1f1;
   color: #ff0000;
-  border: 1px solid #0000c6;
+  border: 1px solid #0000c6;*/
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 500px) {
@@ -531,14 +536,12 @@ overflow: hidden;
   display: none;
 }
 
-<<<<<<< HEAD
-=======
 
 .form-test input:focus ol li::before{
   background-color: black;
 }
 
->>>>>>> db462b6f62a55911447edd75c0a6dff75d67cc41
+
 .custom-counter{
   margin: 0;
   padding: 0;
@@ -591,7 +594,8 @@ overflow: hidden;
   margin-top: 50px;
   font-size: 80%;
   background-color: #ff0000;
-  color: white;
+  border: 1px solid #ff0000;
+  color: #ffffff;
   font-weight: bold;
   padding: 5px 8px;
   border-radius: 50px;
@@ -618,6 +622,7 @@ overflow: hidden;
   border-width: 1px;
   border-color: #ff0000;
   background-color: none;
+  color: #ff0000;
   font-weight: bold;
   padding: 5px 5px;
   border-radius: 50px;
