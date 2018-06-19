@@ -1400,7 +1400,7 @@
   </svg>
 </div>
 
-  <div class="main-test">
+  <div class="main-test" id="main-test">
     <form id="form1" class="form-test" action="" method="">
       <ol class="custom-counter">
       <li>Ils vont <input type="text" name="" value=""> Paris. Elle <input type="text" name="" value=""> un gros chien.
@@ -1494,15 +1494,23 @@
   <div class="sea-bg"></div>
 
 
-  <div class="timerDiv">
+  <div class="timerDiv" id="timerDiv">
 		<div id="outer-timer">
 			<div class="inner-timer"><input type="hidden" id="set-time" value="1"/>
       <div id='timer'></div></div>
 		</div>
 	</div>
 
-  <div class="valider">
+  <div class="valider" id="valider">
     <a onclick="myFunction()" href="#suivant" id="validerBtn">Valider</a>
+  </div>
+
+  <div id="recompense">
+    <div id="dinoTrophy">
+      <p>Bravo John Doe,</p>
+      <p>Tu viens de gagner le trophée des 5 bonnes réponses d’affilée !</p>
+      <p>Poursuis le test pour améliorer encore ton score et repeupler la terre des dinosaures...</p>
+    </div>
   </div>
 
 
@@ -1512,15 +1520,20 @@
   function myFunction() {
     clicks = clicks+1;
     if(clicks == 1){
+      document.getElementById('main-test').style.display = 'none';
+      document.getElementById('timerDiv').style.display = 'none';
+      document.getElementById('valider').style.display = 'none';
+      document.getElementById('recompense').style.display = 'block';
+    } else if(clicks == 2){
       document.getElementById('form1').style.display = 'none';
       document.getElementById('form2').style.display = 'block';
-    } else if(clicks == 2){
+    } else if(clicks == 3){
       document.getElementById('form2').style.display = 'none';
       document.getElementById('form3').style.display = 'block';
-    } else if(clicks == 3){
+    } else if(clicks == 4){
       document.getElementById('form3').style.display = 'none';
       document.getElementById('form4').style.display = 'block';
-    } else if(clicks == 4){
+    } else if(clicks == 5){
       document.getElementById('form4').style.display = 'none';
       document.getElementById('form5').style.display = 'block';
     } else {
