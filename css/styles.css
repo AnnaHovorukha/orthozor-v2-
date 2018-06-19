@@ -289,29 +289,6 @@ html, body {
   margin: auto 10%;
   width: 300px;
 }
-.line1::after {
-    content:"";
-    position: absolute;
-    width: 10%;
-    bottom: 40%;
-    left: 30%;
-    right: 0;
-    height: 0.5em;
-    border-top: 1px solid #ff0000;
-    z-index: -1;
-}
-.line2::after {
-    content:"";
-    position: absolute;
-    width: 10%;
-    bottom: 40%;
-    left: 61%;
-    right: 0;
-    height: 0.5em;
-    border-top: 1px solid #ff0000;
-    z-index: -1;
-}
-
 .dashNumber{
   font-weight: 500;
   color: #ff0000;
@@ -905,6 +882,7 @@ text.cls-23{
   width: 70%;
   margin-left: 15%;
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 #recompense{
@@ -930,3 +908,5 @@ text.cls-23{
 
 >>>>>>> 0f1c78705c92b05bd5c7797aa24759d41e6c66c3
 }
+=======
+>>>>>>> parent of 49c2046... LinesHome
