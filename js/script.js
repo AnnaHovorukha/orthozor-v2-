@@ -25,6 +25,10 @@ var pl2 = document.getElementsByClassName("pl2");
 var pl3 = document.getElementsByClassName("pl3");
 var pl4 = document.getElementsByClassName("pl4");
 var pl5 = document.getElementsByClassName("pl5");
+var dyno5 = document.getElementsByClassName("dyno5");
+var horn1 = document.getElementsByClassName("horn1");
+var horn2 = document.getElementsByClassName("horn2");
+var horn3 = document.getElementsByClassName("horn3");
 
 var tltreeSwing = new TimelineMax();
 var tltreeSwing2 = new TimelineMax();
@@ -59,39 +63,39 @@ function animationBilan(){
 }
 
 function moveDyno1(){
-  var tlgreenFace = new TimelineMax();
-  tlgreenFace.set(dyno1,{opacity:0},0)
-  tlgreenFace.to(dyno1, .5, {opacity:1}, 60)
-  tlgreenFace.to(gills, .5, {skewY:"5deg", repeat:15, yoyo:true})
-  tlgreenFace.to(dyno1, 1, {opacity:0})
+  var tldyno1 = new TimelineMax();
+  tldyno1.to(dyno1, .5, {opacity:1}, 10)
+  tldyno1.to(gills, .5, {skewY:"5deg", repeat:15, yoyo:true})
+  tldyno1.to(dyno1, 1, {opacity:0})
 }
-
-setTimeout(function() {
-  moveDyno1();
-  animationBilan();
-}, 0);
 
 function moveDyno3(){
   var tldyno3 = new TimelineMax();
-  tldyno3.set(dyno3,{opacity:0}, 0)
   tldyno3.to(dyno3, .5, {opacity:1}, 180)
   tldyno3.to(dyno3, .5, {scale:1.010, repeat:15, yoyo:true})
   tldyno3.to(dyno3, .5, {opacity:0})
 }
 
-setTimeout(function() {
-  moveDyno3();
-}, 0);
-
 function moveDyno4(){
   var tldyno4 = new TimelineMax();
-  tldyno4.set(dyno4,{opacity:0},0)
   tldyno4.to(dyno4, .5, {opacity:1}, 360)
+  tldyno4.to(dyno4, .5, {scale:1.010, repeat:15, yoyo:true})
+  tldyno4.to(dyno4, .5, {opacity:0})
+}
 
+function moveDyno5(){
+  var tldyno5 = new TimelineMax();
+  tldyno5.to(dyno5, .5, {opacity:1}, 460)
+  tldyno5.to(horn1, .5, {skewY:"8deg", repeat:25, yoyo:true})
+  tldyno5.to(dyno5, .5, {opacity:0})
 }
 
 setTimeout(function() {
+  moveDyno1();
+  animationBilan();
+  moveDyno3();
   moveDyno4();
+  moveDyno5();
 }, 0);
 
 var tlgrass = new TimelineMax();

@@ -394,6 +394,7 @@ html, body {
   width:23%;
   left:6%;
   top:46%;
+  opacity:0;
 }
 
 .dyno3{
@@ -402,6 +403,7 @@ html, body {
   width:23%;
   right:2%;
   top:29%;
+  opacity:0;
 }
 
 .dyno4{
@@ -410,6 +412,16 @@ html, body {
   width: 13%;
   top:29%;
   left:5%;
+  opacity:0;
+}
+
+.dyno5{
+  z-index: 3;
+  position: absolute;
+  width:22%;
+  right:10%;
+  top:31%;
+  opacity: 0;
 }
 
 .plants-bilan{
@@ -894,6 +906,7 @@ text.cls-23{
   margin-left: 15%;
 }
 
+<<<<<<< HEAD
 #recompense{
   position: absolute;
   display: none;
@@ -912,4 +925,8 @@ text.cls-23{
   width: 50%;
   background-color: #ffffff;
   padding: 3.5% 3%;
+=======
+.blur{
+
+>>>>>>> 0f1c78705c92b05bd5c7797aa24759d41e6c66c3
 }
