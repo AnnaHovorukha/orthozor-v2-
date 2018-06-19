@@ -1592,29 +1592,32 @@
   </div>
 
 
-<script type="text/javascript">
-  var clicks = 0;
+  <script type="text/javascript">
+    var clicks = 0;
 
-  function myFunction() {
-    clicks = clicks+1;
-    if(clicks == 1){
-      document.getElementById('form1').style.display = 'none';
-      document.getElementById('form2').style.display = 'block';
-    } else if(clicks == 2){
-      document.getElementById('form2').style.display = 'none';
-      document.getElementById('form3').style.display = 'block';
-    } else if(clicks == 3){
-      document.getElementById('form3').style.display = 'none';
-      document.getElementById('form4').style.display = 'block';
-    } else if(clicks == 4){
-      document.getElementById('form4').style.display = 'none';
-      document.getElementById('form5').style.display = 'block';
-    } else {
-      window.location.href = 'bilan.html';
+    function myFunction() {
+      clicks = clicks+1;
+      if(clicks == 1){
+        document.getElementById('main-test').style.display = 'none';
+        document.getElementById('timerDiv').style.display = 'none';
+        document.getElementById('valider').style.display = 'none';
+        document.getElementById('recompense').style.display = 'block';
+      } else if(clicks == 2){
+        document.getElementById('form1').style.display = 'none';
+        document.getElementById('form2').style.display = 'block';
+      } else if(clicks == 3){
+        document.getElementById('form2').style.display = 'none';
+        document.getElementById('form3').style.display = 'block';
+      } else if(clicks == 4){
+        document.getElementById('form3').style.display = 'none';
+        document.getElementById('form4').style.display = 'block';
+      } else if(clicks == 5){
+        document.getElementById('form4').style.display = 'none';
+        document.getElementById('form5').style.display = 'block';
+      } else {
+        window.location.href = 'bilan.html';
+      }
     }
-  }
-
-</script>
 
 <script src="../js/script.js"></script>
 
